@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ege Doğan | Discord Web</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Rubik', sans-serif;
+      background: linear-gradient(120deg, #2c2f33, #23272a);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyHDE67KMgdwlLCuj0y-2-BRy_CaOQVDmxyA&s');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .card {
+      background: rgb(0, 0, 0);
+      border-radius: 20px;
+      padding: 40px 30px;
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 0 25px rgb(244, 244, 244);
+      backdrop-filter: blur(6px);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .avatar {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 5px solid #ffffff;
+      object-fit: cover;
+      margin-bottom: 20px;
+      transition: transform 0.3s;
+    }
+
+    .avatar:hover { 
+      transform: scale(1.05);
+    }
+
+    .name {
+      font-size: 28px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+    }
+
+    .name img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .tag {
+      color: #ffffff;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .links {
+      margin-top: 15px;
+    }
+
+    .links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      margin: 8px auto;
+      padding: 12px 20px;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 300px;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+
+    .links a:hover {
+      background-color: #ffffff;
+    }
+
+    .links a img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 30px 20px;
+      }
+
+      .name {
+        font-size: 22px;
+      }
+
+      .links a {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img class="avatar" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIALIAvgMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAACAcG/8QAIBABAAAGAwADAAAAAAAAAAAAAAIHNnSywQMEcwEGEf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDn5/VF0vGLJlrUZ/VF0vGLJlwAAAAAAAAAAAAAAAAAAAACgZC/P59U5biPSflASGpTluI9A5Cf1RdLxiyZc1Gf1RdLxiyZcAAAAAAAAAAAAAAAAAAAAAoCQ1KctxHpP6gZDUpy3EegcfP6oul4xZMuajP6oul4xZMuAAAAAAAAAAAAAAAAAAAAAUBIalOW4j0n9QEhqU5biPQOQn9UXS8YsmXNRn9UXS8YsmXAAAAAAAAAAAAAAAAAAAAAKAkNSnLcR6T+oCQ1KctxHoHIT+qLpeMWTLmoz+qLpeMWTLgAAAAAAAAAAAAAAAAAAAAFASGpTluI9J/UBIalOW4j0DkJ/VF0vGLJlzUZ/VF0vGLJlwAAAAAAAAAAAAAAAAAAAACgJDUpy3Eek/qAkNSnLcR6ByE/qi6XjFky5qM/qi6XjFky4AAAAAAAAAAAAAAAAAAAABQEhqU5biPSf1ASGpTluI9A5Cf1RdLxiyZc1Gf1RdLxiyZcAAAAAAAAAAAAAAAAAAAAAoCQ1KctxHpP6gJDUpy3EegchP6oul4xZMuajP6oul4xZMuAAAAAAAAAAAAAAAAAAAAAUBIalOW4j0n9QEhqU5biPQOQn9UXS8YsmXNRn9UXS8YsmXAAAAAAAAAAAAAAAAAAAAAKAkNSnLcR6T+oCQ1KctxHoHIT+qLpeMWTLmoz+qLpeMWTLgAAAAAAAAAAAAAAAAAAAAFASGpTluI9J/UBIalOW4j0DkJ/VF0vGLJlwAAAAAAAAAAAAAAAAAAAAAKAkNSnLcR6AH//2Q==" alt="Profil" />
+    
+    <div class="name">
+      Anıl
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Twitter_Verified_Badge.svg/1200px-Twitter_Verified_Badge.svg.png" alt="Verified Badge" />
+    </div>
+    
+    <div class="tag">@an1lp0tt3r</div>
+
+    <div class="links">
+      <a href="https://vsco.co/ann1l7" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="VSCO" />
+        VSCO Profilim
+      </a>
+      <a href="https://www.tiktok.com/@ann1l.inc" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok" />
+        TikTok Profilim
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
